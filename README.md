@@ -15,6 +15,14 @@ yadm clone
 
 This also installs utility scripts I wrote (see [below](#included-scripts)) into the `bin` directory.
 
+## 📜 Included Scripts
+I wrote some utility scripts which are supposed to make some things easier and faster. They can be found in the `bin` directory.
+
+- `dev-env`
+  - I use [Nix](https://nixos.org/) for development environments. These are realized using [Flakes](https://nixos.wiki/wiki/Flakes). Entering those environments using `nix develop <path>` can be a bit tedious sometimes. This script simplifies this process using [fzf](https://github.com/junegunn/fzf).
+- `_generate_nvim_plugins.sh`
+  - This script generates a Markdown-formatted list of Neovim plugins from a given Neovim configuration file. Highly experimental.
+
 ## 🛠️ Tools
 *This list may be outdated*
 
