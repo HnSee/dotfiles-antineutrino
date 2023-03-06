@@ -1,0 +1,22 @@
+#!/bin/bash
+
+DEV_ENV_DIR_DEFAULT="$HOME/profiles"
+DEV_ENV_DIR="${DEV_ENV_DIR:-$DEV_ENV_DIR_DEFAULT}"
+
+packages_exclude=(
+  url
+  legacyPackages
+  mkShell
+)
+
+packages_exclude_regex=$(IFS="|" ; echo "${packages_exclude[*]}")
+
+preview_dev_env_command="grep -o -P '(?<=pkgs\.)[\w_-]+' $DEV_ENV_DIR/{}/flake.nix | grep -v -E \"$packages_exclude_regex\""
+
+function dev_env_dirs() {
+  dir -1 "$DEV_ENV_DIR" | fzf --preview "$preview_dev_env_command"
+}
+
+chosen_env=$(dev_env_dirs)
+
+nix develop "$DEV_ENV_DIR/$chosen_env"
