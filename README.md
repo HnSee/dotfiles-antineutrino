@@ -13,7 +13,7 @@ I use [yadm](https://github.com/TheLocehiliosan/yadm) for managing the dotfiles 
 yadm clone
 ```
 
-This also installs utility scripts I wrote (see [below](#included-scripts)) into the `bin` directory.
+This also installs utility scripts I wrote (see [below](#-included-scripts)) into the `bin` directory.
 
 ## 📜 Included Scripts
 I wrote some utility scripts which are supposed to make some things easier and faster. They can be found in the `bin` directory.
