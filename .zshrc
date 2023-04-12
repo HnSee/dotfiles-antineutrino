@@ -44,6 +44,10 @@ zinit ice as"program" from"gh-r"
 zinit light ajeetdsouza/zoxide
 eval "$(zoxide init zsh --cmd j)"
 
+# SSH
+export SSH_AGENT_PID=""
+export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
+
 # Aliases
 unalias rm
 
