@@ -47,6 +47,4 @@ eval "$(zoxide init zsh --cmd j)"
 # Aliases
 unalias rm
 
-alias nfetch="neofetch --config ~/.config/neofetch/nixfetch.conf"
-# alias nvim='LD_LIBRARY_PATH="$(nix eval --raw nixpkgs#stdenv.cc.cc.lib --offline)/lib" nvim'
 alias de="dev-env"
