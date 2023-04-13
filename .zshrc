@@ -48,6 +48,19 @@ eval "$(zoxide init zsh --cmd j)"
 export SSH_AGENT_PID=""
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh"
 
+# NNN
+export NNN_BMS="d:$HOME/Documents;D:$HOME/Dev;w:$HOME/Downloads"
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG="v:preview-tui"
+export EDITOR=nvim
+
+if [ -f /usr/share/nnn/quitcd/quitcd.bash_zsh ]; then
+  source /usr/share/nnn/quitcd/quitcd.bash_zsh
+fi
+
+# Path modifications
+export PATH=$PATH:~/bin:~/.local/bin
+
 # Aliases
 unalias rm
 
