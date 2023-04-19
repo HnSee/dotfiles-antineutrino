@@ -156,6 +156,19 @@ require("lazy").setup({
 
       require("lspconfig").texlab.setup({})
 
+      require("lspconfig").jsonls.setup({
+        on_attach = on_attach,
+      })
+
+      require("lspconfig").cssls.setup({
+        on_attach = on_attach,
+      })
+
+      require("lspconfig").clangd.setup({
+        on_attach = on_attach,
+      })
+
+
       vim.diagnostic.config({ virtual_text = false })
     end,
   },
