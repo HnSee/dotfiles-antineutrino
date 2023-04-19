@@ -72,7 +72,5 @@ I wrote some utility scripts which are supposed to make some things easier and f
 I have some plans configuring new and old applications. If I configure applications matching this setup I will include the respective dotfiles in here.
 
 ### Possible Future Applications
-- [Hyprland](https://hyprland.org/)
-- [Waybar](https://github.com/Alexays/Waybar)
 - [Eww](https://github.com/elkowar/eww)
 - ...
