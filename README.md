@@ -26,7 +26,11 @@ I wrote some utility scripts which are supposed to make some things easier and f
 ## 🛠️ Tools
 *This list may be outdated*
 
-- Terminal Multiplexer: [tmux](https://github.com/tmux/tmux/wiki)
+- Compositor/Window Manager: [Hyprland](https://hyprland.org/)
+- Status bar: [Waybar](https://github.com/Alexays/Waybar)
+- Notification daemon: [Dunst](https://github.com/dunst-project/dunst)
+- Terminal file manager: [nnn](https://github.com/jarun/nnn)
+- Terminal multiplexer: [tmux](https://github.com/tmux/tmux/wiki)
 - Shell: [Zsh](https://www.zsh.org/)
   - Plugin manager: [zinit](https://github.com/zdharma-continuum/zinit)
   - Theme: `Oxide` by [dikiaap](https://github.com/dikiaap/dotfiles/blob/master/.oh-my-zsh/themes/oxide.zsh-theme)
