@@ -60,6 +60,7 @@ fi
 
 # Path modifications
 export PATH=$PATH:~/bin:~/.local/bin
+export PATH=~/.nix-profile/bin:$PATH
 
 # Aliases
 unalias rm
