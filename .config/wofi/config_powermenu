@@ -1,0 +1,8 @@
+style=/home/henne/.config/wofi/powermenu.css
+location=center
+hide_search=true
+hide_scroll=true
+halign=center
+content_halign=center
+width=150px
+height=250px

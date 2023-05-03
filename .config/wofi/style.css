@@ -1,0 +1,48 @@
+window {
+  border-radius: 6px;
+  background-color: rgba(3, 3, 3, 0.9);
+  font-family: "Inter";
+}
+
+#input {
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  box-shadow: none;
+  padding: 14px;
+}
+
+#inner-box {
+  margin: 5px;
+  color: #ffffff;
+}
+
+#outer-box {
+  margin: 5px;
+}
+
+#scroll {
+  margin: 5px;
+}
+
+#text {
+  margin: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#entry {
+  border-radius: 8px;
+  outline: none;
+}
+
+#entry:selected {
+  background-color: #fb8500;
+}
+
+#entry:selected #text {
+  color: #000000;
+}
