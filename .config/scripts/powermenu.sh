@@ -19,6 +19,6 @@ case $chosen in
 	    reboot
         ;;
     $suspend)
-	    loginctl suspend
+	    systemctl suspend
         ;;
 esac
