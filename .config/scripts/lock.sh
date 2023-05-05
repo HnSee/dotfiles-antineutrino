@@ -13,7 +13,7 @@ swaylock \
   --timestr "%H:%M" \
   --datestr "%d.%m.%Y" \
   --fade-in "0.2" \
-  --effect-blur "6x6" \
+  --effect-blur "14x14" \
   --color "00000000" \
   --bs-hl-color "$ACCENT" \
   --key-hl-color "$PRIMARY" \
