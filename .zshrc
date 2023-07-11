@@ -26,6 +26,7 @@ zinit for \
     OMZL::theme-and-appearance.zsh \
     OMZP::colored-man-pages \
     OMZP::common-aliases \
+    OMZP::kubectl \
     OMZP::git
 
 zinit ice pick".oh-my-zsh/themes/oxide.zsh-theme"
