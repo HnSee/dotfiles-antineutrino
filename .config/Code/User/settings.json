@@ -2,6 +2,7 @@
   "workbench.colorTheme": "Ayu Dark",
   "window.menuBarVisibility": "toggle",
   "editor.bracketPairColorization.enabled": false,
+  "window.titleBarStyle": "custom",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
@@ -33,7 +34,6 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "csharp.referencesCodeLens.enabled": false,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -41,5 +41,54 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.smartRelativeLine": true,
-  "editor.lineNumbers": "relative"
+  "editor.lineNumbers": "relative",
+  "editor.fontFamily": "'SauceCodePro Nerd Font'",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "C_Cpp.default.includePath": ["subprojects/argh"],
+  "jupyter.askForLargeDataFrames": false,
+  "explorer.confirmDragAndDrop": false,
+  "redhat.telemetry.enabled": false,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.useSystemClipboard": true,
+  "php.validate.executablePath": "/nix/store/44d7gdr46pfmm8g9kif9d26h6yiyrlyw-php-with-extensions-8.1.22/bin/php",
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "haskell.manageHLS": "PATH",
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "telemetry.telemetryLevel": "off",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "notebook.lineNumbers": "on",
+  "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
+  "julia.symbolCacheDownload": true,
+  "julia.enableTelemetry": false,
+  "julia.executablePath": "/nix/store/k2g7cmagmsh78xsrdlj7qw8y6331iyg7-julia-bin-1.9.3/bin/julia",
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2024-05-23T15:01:35.889Z"
+  },
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-19",
+      "path": "/nix/store/r12q2z73ap6g09x815shkvsq3hsi740d-openjdk-19.0.2+7/lib/openjdk",
+      "default": true
+    }
+  ],
+  "java.inlayHints.parameterNames.enabled": "none"
 }
