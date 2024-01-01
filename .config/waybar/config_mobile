@@ -8,7 +8,7 @@
     "layer": "top",
     "output": "eDP-1",
     "modules-left": [
-      "wlr/workspaces",
+      "hyprland/workspaces",
       "custom/clock-icon",
       "custom/clock-text"
     ],
@@ -113,8 +113,7 @@
       "scroll-step": 5,
       "on-click": "pamixer -t"
     },
-    "wlr/workspaces": {
-      "disable-scroll": true,
+    "hyprland/workspaces": {
       "all-outputs": true
     }
   }
