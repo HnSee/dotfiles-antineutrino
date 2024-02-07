@@ -90,5 +90,8 @@
       "default": true
     }
   ],
-  "java.inlayHints.parameterNames.enabled": "none"
+  "java.inlayHints.parameterNames.enabled": "none",
+  "files.associations": {
+    "*.Rmd": "rmd"
+  }
 }
