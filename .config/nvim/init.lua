@@ -102,6 +102,14 @@ require("lazy").setup({
     config = true,
   },
   {
+    "m4xshen/autoclose.nvim",
+    config = true,
+  },
+  {
+    "kaarmu/typst.vim",
+    ft = "typst",
+  },
+  {
     "phaazon/hop.nvim",
     config = true,
     keys = {
@@ -166,6 +174,13 @@ require("lazy").setup({
 
       require("lspconfig").clangd.setup({
         on_attach = on_attach,
+      })
+
+      require("lspconfig").typst_lsp.setup({
+        on_attach = on_attach,
+        settings = {
+          exportPdf = "onSave"
+        }
       })
 
 
@@ -435,6 +450,7 @@ vim.keymap.set('n', 'gB', "<cmd>bprevious<cr>", { desc = "Previous buffer" })
 vim.keymap.set('n', '<leader>q', "<cmd>bd<cr>", { desc = "Close buffer" })
 vim.keymap.set('n', '<leader>Q', "<cmd>bd!<cr>", { desc = "Force close buffer" })
 vim.keymap.set('n', '<leader>w', "<cmd>update<cr>", { desc = "Update current file" })
+vim.keymap.set('i', '<C-s>', "<cmd>update<cr>", { desc = "Update current file" })
 vim.keymap.set('n', '<leader>c', "<cmd>quit<cr>", { desc = "Close window" })
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", { desc = "Rename symbol", noremap = true })
 vim.keymap.set('n', '<cr>', "o<esc>k", { desc = "Insert blank line below" })
