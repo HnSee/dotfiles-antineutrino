@@ -1,3 +1,5 @@
+export XDG_SCREENSHOTS_DIR="$HOME/Images/Screenshots"
+
 if [ -z "${WAYLAND_DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 
   # NVIDIA as main GPU (proprietary driver):
