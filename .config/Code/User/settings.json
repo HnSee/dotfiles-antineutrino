@@ -25,6 +25,12 @@
     }
   ],
   "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-p>": false
+  },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -57,7 +63,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.useSystemClipboard": true,
-  "php.validate.executablePath": "/nix/store/44d7gdr46pfmm8g9kif9d26h6yiyrlyw-php-with-extensions-8.1.22/bin/php",
+  "php.validate.executablePath": "/nix/store/7mpb1bgpbng7193sqlkd5n68yqg5hiw8-php-with-extensions-8.1.26/bin/php",
   "dotnet.codeLens.enableReferencesCodeLens": false,
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -93,5 +99,6 @@
   "java.inlayHints.parameterNames.enabled": "none",
   "files.associations": {
     "*.Rmd": "rmd"
-  }
+  },
+  "php.suggest.basic": false
 }
