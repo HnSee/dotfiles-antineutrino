@@ -100,5 +100,6 @@
   "files.associations": {
     "*.Rmd": "rmd"
   },
-  "php.suggest.basic": false
+  "php.suggest.basic": false,
+  "editor.inlineSuggest.enabled": false
 }
