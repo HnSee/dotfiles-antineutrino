@@ -61,6 +61,7 @@ fi
 
 # Path modifications
 export PATH=$PATH:~/bin:~/.local/bin
+export PATH=$PATH:~/.dotnet/tools
 export PATH=~/.nix-profile/bin:$PATH
 
 # Aliases
