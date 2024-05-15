@@ -344,10 +344,10 @@ require("lazy").setup({
   {
     "akinsho/toggleterm.nvim",
     opts = {
-      open_mapping = "<C-_>",
+      open_mapping = [[<C-\>]],
     },
-    keys = { "<C-_>" },
-    config = true,
+    -- keys = { "<C-_>" },
+    -- config = true,
   },
   {
     "folke/persistence.nvim",
@@ -451,6 +451,7 @@ vim.keymap.set('n', '<leader>q', "<cmd>bd<cr>", { desc = "Close buffer" })
 vim.keymap.set('n', '<leader>Q', "<cmd>bd!<cr>", { desc = "Force close buffer" })
 vim.keymap.set('n', '<leader>w', "<cmd>update<cr>", { desc = "Update current file" })
 vim.keymap.set('i', '<C-s>', "<cmd>update<cr>", { desc = "Update current file" })
+vim.keymap.set('i', 'jj', "<Esc>", { desc = "Update current file" })
 vim.keymap.set('n', '<leader>c', "<cmd>quit<cr>", { desc = "Close window" })
 vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", { desc = "Rename symbol", noremap = true })
 vim.keymap.set('n', '<cr>', "o<esc>k", { desc = "Insert blank line below" })
