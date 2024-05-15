@@ -2,40 +2,40 @@
 @import url("./accent.css");
 
 * {
-    min-height: 0;
-    font-size: 16px;
-    font-family: "Inter";
-    border: none;
-    border-radius: 0px;
+  min-height: 0;
+  font-size: 16px;
+  font-family: "Inter";
+  border: none;
+  border-radius: 0px;
 }
 
 window#waybar {
-    color: @foreground;
-    background-color: transparent;
-    border: none;
+  color: @foreground;
+  background-color: transparent;
+  border: none;
 }
 
 #workspaces button {
-    color: @foreground;
-    padding: 0.5em 0.5em;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
-    border-radius: 4px;
+  color: @foreground;
+  padding: 0.5em 0.5em;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+  border-radius: 4px;
 }
 
 #workspaces button.active {
-    color: @background;
-    background-color: @foreground;
+  color: @background;
+  background-color: @foreground;
 }
 
 #workspaces button.urgent {
-    color: @background;
-    background-color: @accent1;
+  color: @background;
+  background-color: @accent1;
 }
 
 #workspaces button:hover {
-    color: @color3;
-    background-color: @color2;
+  color: @color3;
+  background-color: @color2;
 }
 
 #custom-clock-icon,
@@ -48,25 +48,25 @@ window#waybar {
 #cpu,
 #memory,
 #temperature,
-#mpd  {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 8px;
-    color: @foreground;
+#mpd {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  color: @foreground;
 }
 
 #workspaces,
 #pulseaudio.icon {
-    border-radius: 6px 0px 0px 6px;
+  border-radius: 6px 0px 0px 6px;
 }
 
 #pulseaudio.icon {
-    padding-left: 16px;
+  padding-left: 16px;
 }
 
 #custom-clock-text,
 #battery.text {
-    border-radius: 0px 6px 6px 0px;
-    padding-right: 16px;
+  border-radius: 0px 6px 6px 0px;
+  padding-right: 16px;
 }
 
 #custom-clock-icon,
@@ -75,9 +75,25 @@ window#waybar {
 #cpu.icon,
 #memory.icon,
 #battery.icon {
-    color: @accent1;
+  color: @accent1;
 }
 
-#battery.warning:not(.charging) {
-    color: #ff5189;
+#battery.warning:not(.charging),
+#battery.critical:not(.charging) {
+  color: #ff5189;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ff5189;
+        color: black;
+    }
+}
+
+#battery.critical:not(.charging) {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
