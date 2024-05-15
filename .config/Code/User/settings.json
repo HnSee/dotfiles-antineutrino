@@ -6,6 +6,12 @@
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "w"],
@@ -22,6 +28,14 @@
     {
       "before": ["<leader>", "s"],
       "after": ["<leader>", "<leader>", "s"]
+    },
+    {
+      "before": ["m", "m"],
+      "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["m", "b"],
+      "commands": ["editor.action.blockComment"]
     }
   ],
   "vim.leader": "<space>",
