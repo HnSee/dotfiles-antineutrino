@@ -1,0 +1,120 @@
+[
+  {
+    "id": "main",
+    "margin-top": 15,
+    "margin-left": 15,
+    "margin-right": 15,
+    "position": "top",
+    "layer": "top",
+    "output": "HDMI-A-1",
+    "modules-left": [
+      "hyprland/workspaces",
+      "custom/clock-icon",
+      "custom/clock-text"
+    ],
+    "modules-right": [
+      "pulseaudio#icon",
+      "pulseaudio#text",
+      "temperature#icon",
+      "temperature#text",
+      "cpu#icon",
+      "cpu#text",
+      "memory#icon",
+      "memory#text",
+      "battery#icon",
+      "battery#text"
+    ],
+    "tray": {
+      "icon-size": 21,
+      "spacing": 10
+    },
+    "custom/clock-icon": {
+      "format": ""
+    },
+    "custom/clock-text": {
+      "format": "{}",
+      "interval": 1,
+      "return-type": "json",
+      "exec": "jq -n -c --arg text \"$(TZ=CET date +%R)\" --arg alt \"\" --arg tooltip \"$(TZ=CET date +%d.%m.%Y)\" --arg class \"\" --arg percentage \"\" '{\"text\": $text, \"alt\": $alt, \"tooltip\": $tooltip, \"class\": $class, \"percentage\": $percentage}'"
+    },
+    "cpu#icon": {
+      "format": "",
+      "tooltip": false
+    },
+    "cpu#text": {
+      "format": "{usage}%",
+      "tooltip": false
+    },
+    "memory#icon": {
+      "format": ""
+    },
+    "memory#text": {
+      "format": "{}%"
+    },
+    "temperature#icon": {
+      "critical-threshold": 80,
+      "format-critical": "{icon}",
+      "format": "{icon}",
+      "format-icons": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "temperature#text": {
+      "critical-threshold": 80,
+      "format-critical": "{temperatureC}°C",
+      "format": "{temperatureC}°C"
+    },
+    "battery#icon": {
+      "interval": 1,
+      "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "",
+      "format-discharging": "{icon}",
+      "format-icons": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    "battery#text": {
+      "interval": 1,
+      "states": {
+        "good": 95,
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{capacity}%"
+    },
+    "pulseaudio#icon": {
+      "format": "{icon}",
+      "format-bluetooth": "{icon}",
+      "format-muted": "",
+      "format-icons": {
+        "headphones": "",
+        "default": [
+          "",
+          ""
+        ]
+      },
+      "scroll-step": 5,
+      "on-click": "pamixer -t"
+    },
+    "pulseaudio#text": {
+      "format": "{volume:2}%",
+      "format-bluetooth": "{volume}%",
+      "format-muted": "--%",
+      "scroll-step": 5,
+      "on-click": "pamixer -t"
+    },
+    "hyprland/workspaces": {
+      "all-outputs": true
+    }
+  }
+]
