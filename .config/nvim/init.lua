@@ -108,6 +108,9 @@ require("lazy").setup({
   {
     "kaarmu/typst.vim",
     ft = "typst",
+    config = function()
+      vim.g.typst_auto_open_quickfix = 0
+    end
   },
   {
     "phaazon/hop.nvim",
@@ -183,6 +186,12 @@ require("lazy").setup({
         }
       })
 
+      require("lspconfig").typst_lsp.setup({
+        on_attach = on_attach,
+        settings = {
+          exportPdf = "onSave"
+        }
+      })
 
       vim.diagnostic.config({ virtual_text = false })
     end,
