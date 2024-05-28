@@ -105,13 +105,13 @@ require("lazy").setup({
     "m4xshen/autoclose.nvim",
     config = true,
   },
-  {
-    "kaarmu/typst.vim",
-    ft = "typst",
-    config = function()
-      vim.g.typst_auto_open_quickfix = 0
-    end
-  },
+  -- {
+  --   "kaarmu/typst.vim",
+  --   ft = "typst",
+  --   config = function()
+  --     vim.g.typst_auto_open_quickfix = 0
+  --   end
+  -- },
   {
     "phaazon/hop.nvim",
     config = true,
@@ -179,17 +179,15 @@ require("lazy").setup({
         on_attach = on_attach,
       })
 
-      require("lspconfig").typst_lsp.setup({
+      require("lspconfig").tinymist.setup({
         on_attach = on_attach,
+        root_dir = function()
+          return vim.fn.getcwd()
+        end,
         settings = {
-          exportPdf = "onSave"
-        }
-      })
-
-      require("lspconfig").typst_lsp.setup({
-        on_attach = on_attach,
-        settings = {
-          exportPdf = "onSave"
+          exportPdf = "auto",
+          formatterMode = "typstyle",
+          rootPath = vim.fn.getcwd()
         }
       })
 
@@ -475,3 +473,13 @@ function _G.set_terminal_keymaps()
 end
 
 vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
+
+-- Filetype associations
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  desc = 'Set filetype of *.typ files',
+  pattern = "*.typ",
+  callback = function(opts)
+    local buf = vim.api.nvim_get_current_buf()
+    vim.api.nvim_buf_set_option(buf, "filetype", "typst")
+  end,
+})
