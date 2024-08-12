@@ -99,9 +99,8 @@
   "terminal.integrated.commandsToSkipShell": ["language-julia.interrupt"],
   "julia.symbolCacheDownload": true,
   "julia.enableTelemetry": false,
-  "julia.executablePath": "/nix/store/k2g7cmagmsh78xsrdlj7qw8y6331iyg7-julia-bin-1.9.3/bin/julia",
   "vs-kubernetes": {
-    "vs-kubernetes.minikube-show-information-expiration": "2024-05-23T15:01:35.889Z"
+    "vs-kubernetes.minikube-show-information-expiration": "2024-11-22T17:49:32.674Z"
   },
   "java.configuration.runtimes": [
     {
@@ -112,9 +111,19 @@
   ],
   "java.inlayHints.parameterNames.enabled": "none",
   "files.associations": {
-    "*.Rmd": "rmd"
+    "*.Rmd": "rmd",
+    "*.h": "c"
   },
   "php.suggest.basic": false,
   "editor.inlineSuggest.enabled": false,
-  "prisma.showPrismaDataPlatformNotification": false
+  "prisma.showPrismaDataPlatformNotification": false,
+  "git.openRepositoryInParentFolders": "never",
+  "mesonbuild.downloadLanguageServer": true,
+  "cmake.showOptionsMovedNotification": false,
+  "julia.usePlotPane": false,
+  "task.allowAutomaticTasks": "on",
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "haskell.formattingProvider": "fourmolu"
 }
