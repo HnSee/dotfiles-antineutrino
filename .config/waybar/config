@@ -6,7 +6,7 @@
     "margin-right": 15,
     "position": "top",
     "layer": "top",
-    "output": "DP-1",
+    "output": "DP-2",
     "modules-left": [
       "hyprland/workspaces",
       "custom/clock-icon",
