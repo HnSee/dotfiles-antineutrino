@@ -1,0 +1,6 @@
+[font]
+normal = ["Iosevka Extended"]
+size = 12
+
+[font.features]
+"Iosevka Extended" = [ "-calt", "+HSKL" ]
