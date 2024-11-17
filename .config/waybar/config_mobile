@@ -35,7 +35,7 @@
       "format": "{}",
       "interval": 1,
       "return-type": "json",
-      "exec": "jq -n -c --arg text \"$(TZ=CET date +%R)\" --arg alt \"\" --arg tooltip \"$(TZ=CET date +%d.%m.%Y)\" --arg class \"\" --arg percentage \"\" '{\"text\": $text, \"alt\": $alt, \"tooltip\": $tooltip, \"class\": $class, \"percentage\": $percentage}'"
+      "exec": "jq -n -c --arg text \"$(date +%R)\" --arg alt \"\" --arg tooltip \"$(date +%d.%m.%Y)\" --arg class \"\" --arg percentage \"\" '{\"text\": $text, \"alt\": $alt, \"tooltip\": $tooltip, \"class\": $class, \"percentage\": $percentage}'"
     },
     "cpu#icon": {
       "format": "",
