@@ -1,0 +1,17 @@
+set adjust-open "best-fit"
+
+set smooth-scroll "true"
+set selection-clipboard clipboard
+
+set incremental-search true
+set search-hadjust true
+
+set font "JetBrainsMono Nerd Font"
+
+map [normal]     b toggle_statusbar
+map [fullscreen] b toggle_statusbar
+
+map <Left> navigate previous
+map <Up> navigate previous
+map <Right> navigate next
+map <Down> navigate next
