@@ -1,0 +1,8 @@
+port = 9001
+secret_hash_path = "/home/user/.config/system-control/secret"
+tls_cert = "/home/user/.config/system-control/cert.pem"
+tls_key = "/home/user/.config/system-control/key.pem"
+
+[commands]
+shutdown = "notify-send 'Shutting down in one minute.' -a 'System Control' && shutdown 1m"
+lock = "loginctl lock-session"
