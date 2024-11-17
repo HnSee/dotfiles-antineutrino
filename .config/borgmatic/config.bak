@@ -1,0 +1,18 @@
+source_directories:
+  - /home/user
+
+repositories:
+  - path: /mnt/backups/directory
+    label: ExampleServer
+
+exclude_patterns:
+  - '*.pyc'
+  - /home/user/.cache
+  - /home/user/.local
+  - /home/user/.mozilla
+  - /home/user/Dev/Go
+  - '*/Cache/*'
+  - '*/cache/*'
+  - .node_modules 
+
+compression: zstd,6
